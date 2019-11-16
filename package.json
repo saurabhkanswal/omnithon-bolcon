@@ -16,5 +16,11 @@
     "url": "https://github.com/saurabhkanswal/omnithon-bolcon/issues"
   },
   "homepage": "https://github.com/saurabhkanswal/omnithon-bolcon#readme",
-  "dependencies": {}
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "ganache-cli": "^6.7.0",
+    "mocha": "^6.2.2",
+    "solc": "^0.5.13",
+    "web3": "^1.2.4"
+  }
 }
