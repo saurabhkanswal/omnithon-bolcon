@@ -5,8 +5,14 @@ import Campaign from '../../ethereum/campaign'
 class CampaignShow extends Component {
 static async getInitialProps(props){
     const campaign = Campaign(props.query.address)
-
-    return {}
+    const summary = await campaign.methods.getSummary().call();
+    return {
+        minimumContribution: summary[0],
+        balance: summary[1],
+        requestCount: summary[2],
+        approversCount: summary[3],
+        manager: summary[4]
+    }
     
 
 
