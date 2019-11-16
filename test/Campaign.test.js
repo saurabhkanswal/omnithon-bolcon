@@ -73,3 +73,5 @@ describe('Campaigns', () => {
 
     assert.equal('Buy batteries', request.description);
   });
+});
+
