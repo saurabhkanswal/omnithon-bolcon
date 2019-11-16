@@ -1,4 +1,4 @@
-import React , {component} from 'react';
+import React , {Component} from 'react';
 import factory from '../ethereum/factory';
 class CampaignIndex extends Component{
     async componentDidMount(){
@@ -8,7 +8,7 @@ class CampaignIndex extends Component{
 
 
     render(){
-        return <div>Campaigns Index!</div>
+     return <div>Campaigns Index!</div>;
     }
 
 }
