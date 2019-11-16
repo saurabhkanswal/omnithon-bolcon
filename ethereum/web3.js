@@ -6,6 +6,7 @@ let web3;
 if (typeof window !== 'undefined' && typeof window.web3!== 'undefined') {
     // we are in the browser and metamask is running.
     web3 = new Web3(window.web3.currentProvider);
+    window.web3.currentProvider.enable()
 
 } else{
     // we are in the server or the user is not running metamask
