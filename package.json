@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "dev": "next dev"
+    
   },
   "repository": {
     "type": "git",
