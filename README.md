@@ -20,7 +20,7 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 $ git clone https://github.com/saurabhkanswal/omnithon-bolcon.git
 $ npm install -d
-$ node start
+$ npm run dev
 ```
 
 
