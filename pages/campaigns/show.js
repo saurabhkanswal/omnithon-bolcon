@@ -10,6 +10,7 @@ static async getInitialProps(props){
     const campaign = Campaign(props.query.address)
     const summary = await campaign.methods.getSummary().call();
     return {
+        address: props.query.address,
         minimumContribution: summary[0],
         balance: summary[1],
         requestCount: summary[2],
@@ -66,7 +67,7 @@ renderCards() {
             {this.renderCards()}
             </Grid.Column>
             <Grid.Column width={6}>
-            <ContributeFrom/>
+            <ContributeFrom address={this.props.address}/>
             </Grid.Column>
             </Grid>
             </Layout>
