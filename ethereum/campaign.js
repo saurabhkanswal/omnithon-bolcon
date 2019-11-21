@@ -6,4 +6,4 @@ export default (address)=> {
         JSON.parse(Campaign.interface),
         address
     )
-}
+};
